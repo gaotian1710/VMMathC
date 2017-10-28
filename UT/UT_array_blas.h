@@ -1,0 +1,14 @@
+void UT_RealArrayCopy();
+void UT_RealArrayAdd();
+void UT_RealArray_Subtract();
+void UT_RealArray_MultiplyAdd();
+void UT_RealArray_Sum();
+void UT_RealArray_InnerProduct();
+void UT_RealArray_Multiply();
+void UT_ComplexArrayCopy();
+void UT_ComplexArrayAdd();
+void UT_ComplexArray_Subtract();
+void UT_ComplexArray_MultiplyAdd();
+void UT_ComplexArray_Sum();
+void UT_ComplexArray_InnerProduct();
+void UT_ComplexArray_Multiply();
