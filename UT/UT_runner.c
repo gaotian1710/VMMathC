@@ -19,6 +19,12 @@ UT_buffer gUT_buffer = {
 };
 
 FILE* gUT_fp = NULL; // file pointer for test result CSV file.
+
+const real64 UT_zero_real64 = 0.0;
+const real64 UT_tol_real64 = 1.0e-8;
+const complex128 UT_zero_complex128 = 0.0 + I * 0.0;
+const int32_t UT_zero_int32 = 0;
+const uint64_t UT_zero_size = 0;
 #pragma endregion global variables
 
 #pragma region value evaluations
@@ -340,6 +346,12 @@ int main()
     UT_ComplexArray_NewAndDelete();
 
     UT_RealArrayCopy();
+    UT_ComplexArrayCopy();
+
+    UT_RealArrayAdd();
+    UT_RealArray_Subtract();
+    UT_RealArray_MultiplyAdd();
+    
     UT_info("UT_runner exits.\n");
     return 0;
 }

@@ -1,6 +1,6 @@
 #pragma once
 #define UT_INFO_LOG_FILE        "UT_info.log"
-#define UT_RESULT_FILE          "UT_result.txt"
+#define UT_RESULT_FILE          "UT_result.csv"
 
 #define UT_BUFFER_LENGTH        1024
 typedef struct _UT_buffer {
@@ -104,3 +104,10 @@ void UT_open(const char* filePath);
 void UT_close();
 void UT_write();
 void UT_writeTestResult();
+
+// refernce values and tolerance
+extern const real64 UT_zero_real64;
+extern const real64 UT_tol_real64;
+extern const complex128 UT_zero_complex128;
+extern const int32_t UT_zero_int32;
+extern const uint64_t UT_zero_size;
